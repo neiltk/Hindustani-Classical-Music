@@ -16,7 +16,13 @@ struct MainAppView: View {
                     Image(systemName: "square.and.pencil")
                     Text("Compose")
                 }
-        }
+            
+            //Tab 3: The Learn Raag Screen
+            LearnView()
+                            .tabItem {
+                                Image(systemName: "books.vertical.fill")
+                                Text("Learn")
+                            }        }
         .accentColor(.blue)
     }
 }
@@ -24,3 +30,4 @@ struct MainAppView: View {
 #Preview {
     MainAppView()
 }
+ 
